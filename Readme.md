@@ -9,16 +9,19 @@ ICG作業2: 做出一款像是 war thunder 的遊戲
 - 不同子彈
 - 增加死亡效果
 - 履帶動畫特效
+    - 原地旋轉
+    - 加速前進後退
 - 擬真的聲音 (From Game "War thunder")
-    - 包含金屬打擊、履帶聲、砲塔轉動與環境音效
+    - 包含金屬打擊、履帶聲、砲塔轉動聲與環境音效
 - 滑鼠追蹤發射
     - 俯仰與水平轉動分開做
-    - 使用ScreenPointtoRay做到比較好的效果
+    - 使用ScreenPointToRay做到比較好的效果
 - 更換視角
-- AI追蹤反擊
-    - 隨機挑選子彈，生命值不一樣
+- AI追蹤反擊與旋轉砲塔
+    - 隨機挑選子彈，傷害值不一樣
 - 別的場景 (From Unity Asset Store)
 - 場景切換
+- 遊戲結束UI顯示
 
 ## Reference
 
@@ -44,5 +47,6 @@ https://www.sounds-resource.com/pc_computer/warthunder/
 https://unity3d.com/learn/tutorials/topics/audio/sound-effects-scripting
 https://unity3d.com/learn/tutorials/s/tanks-tutorial
 https://mislab.github.io/Unity2017/index.html
+
 ## LICENSE
 MIT
