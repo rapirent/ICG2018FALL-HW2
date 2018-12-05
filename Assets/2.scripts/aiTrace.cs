@@ -16,10 +16,11 @@ public class aiTrace : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        Vector3 direction = (agent.transform.position - transform.position).normalized;
-        Quaternion rotation = Quaternion.LookRotation(direction);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime);
-        transform.Translate(0f, 0f, -0.01f);
+        // Vector3 direction = (agent.transform.position - transform.position).normalized;
+        // Quaternion rotation = Quaternion.LookRotation(direction);
+        // transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime);
+        // transform.Translate(0f, 0f, -0.01f);
         agent.SetDestination(target.transform.position);
+        this.transform.rotation = Quaternion.LookRotation(agent.velocity.normalized);
     }
 }

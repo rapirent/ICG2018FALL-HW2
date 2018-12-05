@@ -24,7 +24,9 @@ public class tankHealth : MonoBehaviour
     private void OnDeath() {
         Instantiate (effect, transform.position, transform.rotation);
         isAlive = false;
-        gameObject.SetActive(false);
+        if (gameObject.tag!="Player") {
+            gameObject.SetActive(false);
+        }
     }
     public float GetHealthPercent() {
         return currentHealth / fullHealth;
